@@ -41,5 +41,4 @@ app.listen(port, async () => {
         console.log('failed to connect DB');
     }
     console.log('server running on: ' + port);
-    console.log(`Server Run Url: ` + `http://localhost:${port}`)
 })
