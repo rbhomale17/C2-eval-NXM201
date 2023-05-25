@@ -33,7 +33,7 @@ EncryptionDecryptionRouter.get('/getmypwd', async (req, res) => {
             if(!isIDPresent){
                 res.send({message:'Invalid ID'})
             }else{
-                // console.log(isIDPresent)
+                // console.log(isIDPresent) 
                 const decryptedString = cryptr.decrypt(isIDPresent.password);
                 // console.log(decryptedString);
                 res.send({message:"Validation Success", password: decryptedString})
