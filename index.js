@@ -4,8 +4,10 @@ const { EncryptionDecryptionRouter } = require('./routes/EncryptionDecryption.ro
 const { HashingVerifyingRouter } = require('./routes/Hashing&Verifying.route');
 const { userRouter } = require('./routes/users.route');
 const { productRouter } = require('./routes/products.route');
+
 const app = express();
 app.use(express.json());
+
 require('dotenv').config();
 const port = process.env.port || 4545;
 
