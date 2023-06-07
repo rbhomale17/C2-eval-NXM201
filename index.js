@@ -20,11 +20,17 @@ app.get("/", (req, res) => {
         Curent_Unit: 'Unit-5',
         server_description: "This Server is created for NXM201 C2 Evaluation held on 22/05/2023 Monday By Masai School",
         userfull_Routes: {
+            
             encrypt:`app.use('/encrypt', EncryptionDecryptionRouter)`,
+            
             hash:`app.use('/hash', HashingVerifyingRouter)`,
+            
             users:`app.use('/users', userRouter)`,
+            
             products:`app.use('/products', productRouter)`,
+            
             getAllUsers:`/users`
+            
         }
     })
 });
